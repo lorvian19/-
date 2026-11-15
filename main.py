@@ -14,7 +14,7 @@ from aiogram.enums import ChatMemberStatus, ChatType
 # ============ НАСТРОЙКИ ============
 logging.basicConfig(level=logging.INFO)
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-DB_PATH = os.getenv("DB_PATH", "channels.db")
+DB_PATH = os.getenv("DB_PATH", "/data/channels.db")
 
 if not BOT_TOKEN:
     raise RuntimeError("Не задан BOT_TOKEN в переменных окружения")
